@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TrY-in-mmM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gKb-UZ-H2a">
+            <objects>
+                <viewController id="TrY-in-mmM" customClass="ViewController" customModule="CoreML_in_ARKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BwD-mV-ZWG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmZ-Ti-tRn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pJv-mp-USK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.51875535100000003" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="G44-Ky-SgM"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPX-Ty-gSU">
+                                <rect key="frame" x="176" y="322" width="22" height="22"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pJv-mp-USK" firstAttribute="leading" secondItem="7r4-GF-WhQ" secondAttribute="leading" id="6gE-wJ-zM8"/>
+                            <constraint firstItem="kPX-Ty-gSU" firstAttribute="centerX" secondItem="BwD-mV-ZWG" secondAttribute="centerX" id="Ffj-l9-TXS"/>
+                            <constraint firstItem="EmZ-Ti-tRn" firstAttribute="leading" secondItem="7r4-GF-WhQ" secondAttribute="leading" id="fIc-my-fTp"/>
+                            <constraint firstItem="EmZ-Ti-tRn" firstAttribute="trailing" secondItem="7r4-GF-WhQ" secondAttribute="trailing" id="k3B-EL-TDz"/>
+                            <constraint firstItem="kPX-Ty-gSU" firstAttribute="centerY" secondItem="BwD-mV-ZWG" secondAttribute="centerY" id="p0h-im-V8q"/>
+                            <constraint firstItem="pJv-mp-USK" firstAttribute="top" secondItem="BwD-mV-ZWG" secondAttribute="top" id="rkv-9y-bdE"/>
+                            <constraint firstItem="pJv-mp-USK" firstAttribute="trailing" secondItem="7r4-GF-WhQ" secondAttribute="trailing" id="tXv-kH-5bl"/>
+                            <constraint firstItem="EmZ-Ti-tRn" firstAttribute="bottom" secondItem="7r4-GF-WhQ" secondAttribute="bottom" id="u54-MO-ngd"/>
+                            <constraint firstItem="EmZ-Ti-tRn" firstAttribute="top" secondItem="BwD-mV-ZWG" secondAttribute="top" id="xhA-SS-tqB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7r4-GF-WhQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="debugTextView" destination="pJv-mp-USK" id="OML-7b-JVA"/>
+                        <outlet property="sceneView" destination="EmZ-Ti-tRn" id="Fem-CF-Wv2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5o-7a-ahQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
